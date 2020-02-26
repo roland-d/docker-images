@@ -12,7 +12,7 @@ RUN docker-php-ext-configure gd \
     --with-jpeg-dir=/usr/lib/ \
     --with-gd
 
-RUN docker-php-ext-install gd mysqli pdo_mysql pgsql pdo_pgsql zip ldap
+RUN docker-php-ext-install gd mysqli pdo_mysql pgsql pdo_pgsql zip ldap gmp
 
 ENV MEMCACHED_DEPS zlib-dev libmemcached-dev cyrus-sasl-dev
 RUN apk add --no-cache --update libmemcached-libs zlib

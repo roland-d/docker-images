@@ -4,7 +4,7 @@ LABEL authors="Hannes Papenberg"
 
 RUN apk --no-cache add zlib-dev libpng-dev postgresql-dev autoconf gcc freetype \
     libpng libjpeg-turbo freetype-dev jpeg-dev libjpeg libjpeg-turbo-dev libzip-dev \
-    icu-dev openldap-dev
+    icu-dev openldap-dev gmp-dev
 
 RUN docker-php-ext-configure gd \
     --with-freetype-dir=/usr/lib/ \
